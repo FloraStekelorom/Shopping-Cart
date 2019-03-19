@@ -8,9 +8,9 @@ var calculateSubTotal = function (ele) {
 
 var sum = function(acc, x) {
   return acc + x;
-}
+};
 
-$(document).ready(function() {
+var calculateTotal = function (ele) {
   var itemsSubTotals = [];
   $('.item').each(function (i, ele) {
     itemSubTotal = calculateSubTotal(ele);
@@ -18,4 +18,12 @@ $(document).ready(function() {
   });
   var totalPrice = itemsSubTotals.reduce(sum);
   $('.totalPrice').html(totalPrice);
+};
+
+$(document).ready(function() {
+  calculateTotal();
+  $('.remove').on('click', function(event) {
+    $(this).closest('.item').remove();
+    calculateTotal();
+  });
 });
