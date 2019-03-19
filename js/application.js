@@ -21,7 +21,7 @@ var calculateTotal = function() {
 };
 
 var timeout;
-$(document).on('input','shoppingCart', function() {
+$(document).on('input','.itemQty input', function() {
   clearTimeout(timeout);
   timeout = setTimeout(function() {
     calculateTotal();
