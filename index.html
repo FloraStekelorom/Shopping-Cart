@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <title>Shopping Cart</title>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -18,6 +18,88 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-
+    <div class="container">
+      <div class="col-12">
+        <h1>Shopping Cart</h1>
+      </div>
+    </div>
+    <div class="container shoppingCart">
+      <div class="row item">
+        <div class="col-xs-3 itemName">Salmon</div>
+        <div class="col-xs-3 itemCost">60</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Tuna</div>
+        <div class="col-xs-3 itemCost">50</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Carp</div>
+        <div class="col-xs-3 itemCost">40</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Pork</div>
+        <div class="col-xs-3 itemCost">45</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Beef</div>
+        <div class="col-xs-3 itemCost">50</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Chicken</div>
+        <div class="col-xs-3 itemCost">30</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Cereal</div>
+        <div class="col-xs-3 itemCost">35</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Milk</div>
+        <div class="col-xs-3 itemCost">10</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+      <div class="row item">
+        <div class="col-xs-3 itemName">Sugar</div>
+        <div class="col-xs-3 itemCost">20</div>
+        <div class="col-xs-3 itemQty">2</div>
+        <div class="col-xs-1"><button class="remonve">remove</button></div>
+        <div class="col-xs-2 itemSubTotal">0</div>
+      </div>
+    </div>
+    <div class="container">
+      <form class="col-12" id="addStock">
+        <input type="text" name="name" value="" placeholder="Orange" required/>
+        <input type="number" name="cost" value="" placeholder="50" required/>
+        <button class="btn btn-primary btn-sm">ADD</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="row price">
+        <div class="col-xs-3">Total Price</div>
+        <div class="col-xs-3">0</div>
+      </div>
+    </div>
   </body>
 </html>
